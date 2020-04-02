@@ -56,7 +56,7 @@ let prodConfig = {
     tokenURL: BASE_URL + '/oauth/token',
     clientID: "Sgc6qFLq41TUzzGabqL9",
     clientSecret: "jkFW9Ke89GQJsC7MQ3gbZykbEW22IWd04ZL5snLu",
-    callbackURL: BASE_URL + "/callback",
+    callbackURL: "http://example.apps.example.com/callback",
     passReqToCallback: true
   };
   
@@ -65,7 +65,7 @@ let devConfig = {
     tokenURL: BASE_URL + '/oauth/token',
     clientID: "KOhHozXiUdvwNiCPzl3y",
     clientSecret: "hwPvlnM9IvUJRvTRMbH1UCvC2kzhk4ttup1vnmoP",
-    callbackURL: "http://ffc3dcfe-bdef-4072-9a75-12e155320a60.apps.feature.eemlive.com/callback",
+    callbackURL: "http://example.apps.example.com/callback",
     passReqToCallback: true
   };
 

@@ -103,7 +103,7 @@ app.get("/user", (req, res) => {
         return;
     }
 
-    request.get("http://test1.feature.eemlive.com/user", {
+    request.get(BASE_URL + "/user", {
         json: true,
         headers: {
             "User-Agent": req.headers["user-agent"],
@@ -135,7 +135,7 @@ app.get("/devices", (req, res) => {
         return;
     }
     
-    request.get("http://test1.feature.eemlive.com/api/v1/devices", {
+    request.get(BASE_URL + "/api/v1/devices", {
         json: true,
         headers: {
             "User-Agent": req.headers["user-agent"],

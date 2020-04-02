@@ -49,20 +49,22 @@ passport.deserializeUser(function(userSz, cb) {
   }
 });
 
+const BASE_URL = 'http://www.example.com';
+
 let prodConfig = {
-    authorizationURL: 'http://test1.feature.eemlive.com/oauth/authorize',
-    tokenURL: 'http://test1.feature.eemlive.com/oauth/token',
-    clientID: "AqFp4U4OsjjNhZxGYLRu",
-    clientSecret: "lhT7PvEmBnyzO0HjwuYD1luSHRnO6MoHx80vrAXt",
-    callbackURL: "http://spaoauth-test1.apps.feature.eemlive.com/callback",
+    authorizationURL: BASE_URL + '/oauth/authorize',
+    tokenURL: BASE_URL + '/oauth/token',
+    clientID: "Sgc6qFLq41TUzzGabqL9",
+    clientSecret: "jkFW9Ke89GQJsC7MQ3gbZykbEW22IWd04ZL5snLu",
+    callbackURL: BASE_URL + "/callback",
     passReqToCallback: true
   };
   
 let devConfig = {
-    authorizationURL: 'http://test1.feature.eemlive.com/oauth/authorize',
-    tokenURL: 'http://test1.feature.eemlive.com/oauth/token',
-    clientID: "VZXvzTO4g6KCk5fkgNJa",
-    clientSecret: "9rUV2Z0fmMwIAeIaARY3nt3tSGro5TKA5rGSCkmE",
+    authorizationURL: BASE_URL + '/oauth/authorize',
+    tokenURL: BASE_URL + '/oauth/token',
+    clientID: "KOhHozXiUdvwNiCPzl3y",
+    clientSecret: "hwPvlnM9IvUJRvTRMbH1UCvC2kzhk4ttup1vnmoP",
     callbackURL: "http://ffc3dcfe-bdef-4072-9a75-12e155320a60.apps.feature.eemlive.com/callback",
     passReqToCallback: true
   };
